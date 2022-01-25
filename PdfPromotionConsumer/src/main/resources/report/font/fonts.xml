@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fontFamilies>
+    <fontFamily name="Times New Roman">
+        <normal>report/font/times.ttf</normal>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+        <locales>
+            <locale>en</locale>
+            <locale>ru</locale>
+            <locale>by</locale>
+            <locale>en_US</locale>
+            <locale>ru_RU</locale>
+            <locale>by_BY</locale>
+        </locales>
+    </fontFamily>
+
+    <fontFamily name="Times New Roman bold">
+        <normal>report/font/timesbd.ttf</normal>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+        <locales>
+            <locale>en</locale>
+            <locale>ru</locale>
+            <locale>by</locale>
+            <locale>en_US</locale>
+            <locale>ru_RU</locale>
+            <locale>by_BY</locale>
+        </locales>
+    </fontFamily>
+
+    <fontFamily name="Times New Roman">
+        <normal>report/font/times.ttf</normal>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+        <locales>
+            <locale>kz</locale>
+            <locale>kg</locale>
+            <locale>am</locale>
+            <locale>kz_KZ</locale>
+            <locale>kg_KG</locale>
+            <locale>am_AM</locale>
+        </locales>
+    </fontFamily>
+
+    <fontFamily name="Times New Roman bold">
+        <normal>report/font/timesbd.ttf</normal>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+        <locales>
+            <locale>kz</locale>
+            <locale>kg</locale>
+            <locale>am</locale>
+            <locale>kz_KZ</locale>
+            <locale>kg_KG</locale>
+            <locale>am_AM</locale>
+        </locales>
+    </fontFamily>
+</fontFamilies>

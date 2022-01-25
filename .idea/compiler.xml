@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pool" />
+        <module name="PdfPromotionConsumer" />
+        <module name="PdfResignationConsumer" />
+        <module name="PdfReportConsumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="PdfPromotionConsumer" target="11" />
+      <module name="PdfReportConsumer" target="11" />
+      <module name="PdfResignationConsumer" target="11" />
+      <module name="pool" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="PdfPromotionConsumer" options="-parameters" />
+      <module name="PdfReportConsumer" options="-parameters" />
+      <module name="PdfResignationConsumer" options="-parameters" />
+      <module name="pool" options="-parameters" />
+    </option>
+  </component>
+</project>

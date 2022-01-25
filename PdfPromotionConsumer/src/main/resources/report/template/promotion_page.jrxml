@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="KRSTN" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="728" leftMargin="57" rightMargin="57" topMargin="85" bottomMargin="43" uuid="cd82b35a-2bb8-4640-81f2-e8c6e66b725f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="userRole" class="java.lang.String"/>
+	<parameter name="userName" class="java.lang.String"/>
+	<parameter name="userSurname" class="java.lang.String"/>
+	<parameter name="userEmail" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="290" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" x="560" y="30" width="160" height="20" uuid="37ee0f50-1578-4fe1-b65e-e8eb43111979">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[CONFIRMED BY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="120" width="728" height="40" uuid="81cdf060-0d1e-4d59-8941-69973486ecfa">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="styled">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[PROMOTION REPORT]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" stretchType="ContainerHeight" x="0" y="170" width="728" height="20" uuid="24ed58ee-010e-4512-955b-aad7e00af572">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="styled">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<sup>"+ "Role - "+ "</sup> "+ "<u> "+$P{userRole} +" </u>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="230" width="728" height="20" uuid="7b9d55e2-c581-4dc8-ad5b-89f020debeb0">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="styled">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Please promote me or increase my salary]]></text>
+			</staticText>
+			<line>
+				<reportElement x="510" y="60" width="210" height="1" uuid="fa663baf-68b6-4037-b756-82cf346d160a"/>
+			</line>
+			<line>
+				<reportElement x="510" y="80" width="210" height="1" uuid="89106087-cac6-4903-b4d2-adeaf229a6b8"/>
+			</line>
+			<line>
+				<reportElement x="510" y="100" width="210" height="1" uuid="89106087-cac6-4903-b4d2-adeaf229a6b8"/>
+			</line>
+		</band>
+	</title>
+	<detail>
+		<band height="130" splitType="Stretch">
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" stretchType="ContainerHeight" x="0" y="0" width="728" height="60" uuid="814a8409-b328-4990-8304-daeb46631244">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="styled">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["name " + $P{userName} +" "+
+"surname " + $P{userSurname} +" "+
+"email "+$P{userEmail} +" "]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
